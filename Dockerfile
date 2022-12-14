@@ -84,8 +84,9 @@ EXPOSE 8000
 
 # Dev: docker build --build-arg HF_AUTH_TOKEN=${HF_AUTH_TOKEN} ...
 # Banana: currently, comment out ARG and set by hand ENV line.
-ARG HF_AUTH_TOKEN
-ENV HF_AUTH_TOKEN=${HF_AUTH_TOKEN}
+#ARG HF_AUTH_TOKEN
+#ENV HF_AUTH_TOKEN=${HF_AUTH_TOKEN}
+ENV HF_AUTH_TOKEN="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"
 
 # MODEL_ID, can be any of:
 # 1) Hugging face model name
@@ -96,7 +97,7 @@ ENV HF_AUTH_TOKEN=${HF_AUTH_TOKEN}
 # "CompVis/stable-diffusion-v1-4", "hakurei/waifu-diffusion",
 # "stabilityai/stable-diffusion-2",
 # "stabilityai/stable-diffusion-2-inpainting" etc.
-ARG MODEL_ID="stabilityai/stable-diffusion-2"
+ARG MODEL_ID="Linaqruf/anything-v3.0"
 ENV MODEL_ID=${MODEL_ID}
 
 # "" = model default.
