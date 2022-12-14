@@ -101,7 +101,8 @@ ARG MODEL_ID="Linaqruf/anything-v3.0"
 ENV MODEL_ID=${MODEL_ID}
 
 # "" = model default.
-ARG PRECISION="fp16"
+#ARG PRECISION="fp16"
+ARG PRECISION="diffusers"
 ENV PRECISION=${PRECISION}
 ADD precision.py .
 
